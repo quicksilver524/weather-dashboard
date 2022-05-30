@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body class="flex-column min-100-vh">
+    <header class="hero">
+      <h1 class="app-title">
+        <i class="fab"></i> Weather Dashboard!
+      </h1>
+    </header>
+
+    <main class="flex-row justify-space-between">
+        <div class="col-12 col-md-4">
+            <!-- makes a card set up for a form -->
+            <div class="card">
+              <h3 class="card-header text-uppercase">Search for a city</h3>
+              <form id="user-form" class="card-body">
+                <label class="form-label" for="username">City and State Name</label>
+                <!-- city input  -->
+                <input name="cityname" id="cityname" type="text" autofocus="true" class="form-input" />
+                <!-- state input  -->
+                <input name="statename" id="statename" type="text" autofocus="true" class="form-input" />
+                <button type="submit" class="btn">Submit</button>
+              </form>
+            </div>
+            <!-- lower left side previous cities  -->
+            <div class="card">
+              <h3 class="card-header text-uppercase">Previous Cities</h3>
+              <div id="language-buttons" class="card-body">
+                <!-- update these buttons to be previous searched cities  -->
+                <button class="btn" data="data-javascript">need to update</button>
+              </div>
+            </div>
+          </div>
+        <!-- right side display city weather results -->
+          <div class="col-12 col-md-8">
+            <!-- top will be weather for today for city picked  -->
+            <h2 class="subtitle">Weather for City: <span id="repo-search-term"></span></h2>
+            <div id="day1-container" class="list-group"></div>
+          <!-- lower part right side 5 day forecast for city picked  -->
+          <div class="card">
+              <h3 class="card-header text-uppercase">insert city name</h3>
+              <div id="day1Forecast" class="card-body">
+                5 day forecast
+            </div>
+            <div class="card">
+              <h3 class="card-header text-uppercase">future date</h3>
+              <div id="futureForecastContainer" class="card-body">
+                  <!-- append the temp, wind, humidity, and uv index  -->
+              </div>
+            </div>
+          </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
