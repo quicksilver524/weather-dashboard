@@ -2,8 +2,8 @@
   --primary: #ccdad1;
   --secondary: #9caea9;
   --tertiary: #788585;
-  --light-dark: #6f6866;
-  --dark: #38302e;
+  --light-blue: rgba(45, 115, 206, 0.756);
+  --dark: #090585;
   --border-radius: 0.3rem;
 }
 
@@ -19,6 +19,11 @@ body {
   color: var(--dark);
   line-height: 1.5;
   font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
 }
 
 h1,
@@ -53,7 +58,7 @@ p {
   color: var(--primary);
   border: none;
   outline: none;
-  background-color: var(--light-dark);
+  background-color: var(--light-blue);
   box-shadow: 3px 3px var(--dark);
   transform: translate(-1px, -1px);
 }
@@ -74,7 +79,7 @@ p {
   color: var(--primary);
   border: none;
   outline: none;
-  background-color: var(--light-dark);
+  background-color: var(--light-blue);
   box-shadow: 3px 3px var(--secondary);
   transform: translate(-1px, -1px);
   display: inline-block;
@@ -109,7 +114,7 @@ p {
   padding: 0 10px;
   display: inline-block;
   border-radius: var(--border-radius);
-  box-shadow: 6px 5px var(--light-dark);
+  box-shadow: 6px 5px var(--light-blue);
 }
 
 .list-group {
@@ -121,7 +126,7 @@ p {
   margin-bottom: 10px;
   padding: 1.5%;
   border-radius: var(--border-radius);
-  background-color: var(--light-dark);
+  background-color: var(--light-blue);
   color: var(--primary);
   text-decoration: none;
 }
@@ -180,7 +185,7 @@ p {
   padding: 3%;
   margin: 5px 0;
   font-size: 1.2rem;
-  border: 2px solid var(--light-dark);
+  border: 2px solid var(--light-blue);
   border-radius: var(--border-radius);
 }
 
